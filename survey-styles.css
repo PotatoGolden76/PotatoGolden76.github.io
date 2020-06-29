@@ -32,32 +32,24 @@ body::before {
   box-sizing: border-box;
 }
 
-.header {
-  padding: 0 0.625rem;
-  margin-bottom: 1.875rem;
-}
-
-.description {
-  font-style: italic;
-  font-weight: 200;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-}
-
-.clue {
-  margin-left: 0.25rem;
-  font-size: 0.9rem;
-  color: #e4e4e4;
-}
-
 .text-center {
   text-align: center;
 }
 
+p {
+  font-size: 1.125rem;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
 
 label {
   display: flex;
   align-items: center;
-  font-size: 1.125rem;
+  font-size: 1.125rem!important;
   margin-bottom: 0.5rem;
 }
 
@@ -80,16 +72,6 @@ button {
   background-color: var(--color-lightblue);
 }
 
-p {
-  font-size: 1.125rem;
-}
-
-h1,
-p {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-
 .container {
   margin: auto;
   padding: 3rem 0 0 0;
@@ -100,6 +82,24 @@ p {
   .container {
     max-width: 720px;
   }
+}
+
+
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+.description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: #e4e4e4;
 }
 
 form {
