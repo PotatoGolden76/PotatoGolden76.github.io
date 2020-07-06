@@ -4,22 +4,59 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="landing.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <title>Handmade Guitars</title>
   </head>
   <body>
     <header id="header">
       <img src="landing-logo.png" alt="header image" id="header-img">
       <nav id="nav-bar">
-        <a href="/html/" class="nav-link">Lorem.</a>
-        <a href="/css/" class="nav-link">Ipsum.</a>
-        <a href="/js/" class="nav-link">Dolor.</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#presentation" class="nav-link">Showcase</a>
+        <a href="#offers" class="nav-link">Get Started</a>
       </nav>
     </header>
 
     <div class="content-container">
-      <h1 class="center-text">Lorem Ipsum.</h1>
+      <h2 class="center-text" id="features">Handcrafted guitars for everyone.</h2>
+
+        <div class="content">
+          <div class="content-section">
+            <i class="material-icons md-48">invert_colors_off</i>
+            <h3>Quality materials and resistant finish for the perfect sound.</h3>
+          </div>
+
+          <div class="content-section">
+            <i class="material-icons md-48">design_services</i>
+            <h3>Designed and manufactured by professionals.</h3>
+          </div>
+
+          <div class="content-section">
+            <i class="material-icons md-48">departure_board</i>
+            <h3>Fast delivery right to your doorstep.</h3>
+          </div>
+        </div>
+
+        <div class="content" id="presentation">
+          <iframe
+            id="video"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="content" id="offers">
+          <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+            <label for="email">Email:</label>
+            <input type="email" name="email" required placeholder="Enter your email" id="email"/>
+            <input type="submit" name="submit" value="Get Started" id="submit"/>
+          </form>
+        </div>
     </div>
   </body>
 
-  <!-- <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
