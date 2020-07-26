@@ -146,9 +146,12 @@ header nav a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .card {
+  height: 250px;
+  width: 200px;
   margin: 20px;
   padding: 10px 20px 10px 20px;
   z-index: 15;
@@ -157,6 +160,7 @@ header nav a:hover {
   background-color: rgba(43, 58, 103, 0.8);
   box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.30);
   transition: all 0.4s ease-in-out;
+  flex: 0 0 25%;
 }
 
 .card:hover {
@@ -168,7 +172,7 @@ header nav a:hover {
   border-radius: 50%;
   border: none;
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.30);
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .card > h1 {
@@ -183,6 +187,10 @@ header nav a:hover {
   flex-wrap: wrap;
 }
 
+#contact-section > img {
+  width: 40%;
+}
+
 .contact {
   color: var(--dark-blue);
   font-weight: 700;
@@ -194,7 +202,7 @@ header nav a:hover {
   margin-bottom: 5px;
 }
 
-.contact p{
+.contact p {
   text-align: justify;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
