@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Raleway&display=swap');
+
+:root::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  text-align: justify;
+}
+
+header {
+    padding: 20px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+header > h6 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight:  700;
+    font-family: 'Raleway', sans-serif;
+}
+
+.parallax-window {
+    min-height: 90vh;
+    background: transparent;
+    z-index: 0;
+}
+
+.content-title {
+    font-size: 2rem;
+    text-decoration: underline;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.content-paragraph {
+    font-size: 1.25rem;
+    font-family: sans-serif;
+
+    margin-top: 10px;
+}
+
+.content-section {
+    min-height: 200px;
+    width: 100%;
+    padding: 20px 100px 30px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
