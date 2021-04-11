@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Algoritmi de Backtracking</title>
+</head>
+
+<body>
+    <script>
+        function scrollStart() {
+            scrollTo(0, screen.height * 0.9);
+        }
+    </script>
+
+    <!--Billboard-->
+    <div class="billboard">
+        <div class="floater">
+            <p>Algoritmi de Backtracking</p>
+        </div>
+
+        <div class="arrow" onclick="scrollStart()"><span></span></div>
+    </div>
+
+    <!--Content-->
+    <div class="container">
+
+        <div class="row">
+            <div class="col s12 m9 l10">
+                <div id="introduction" class="section scrollspy">
+                    <div class="row">
+                        <h5 class="hide-on-large-only"><b>Introducere</b></h5>
+                        <h4 class="hide-on-med-and-down"><b>Introducere</b></h4>
+                    </div>
+
+                    <p class="flow-text">
+                        În matematică și informatică, un algoritm este o secvență finită de instrucțiuni bine definite,
+                        implementabile pe un computer, de obicei pentru a rezolva o clasă de probleme sau pentru a
+                        efectua
+                        un calcul. Algoritmii sunt întotdeauna lipsiți de ambiguitate și sunt folosiți ca specificații
+                        pentru efectuarea calculelor, prelucrării datelor, raționament automat și alte sarcini.
+                    </p>
+
+                    <p class="flow-text">
+
+                        Ca metodă eficientă, un algoritm poate fi exprimat într-o cantitate finită de spațiu și timp,
+                        și într-un limbaj formal bine definit pentru calcularea unei funcții. Pornind de la
+                        o stare inițială și o intrare inițială (poate goală), instrucțiunile descriu un calcul care,
+                        atunci când este executat, se desfășoară printr-un număr finit de stări succesive bine
+                        definite, producând în cele din urmă „ieșire” și terminând într-o stare finală finală. Unii
+                        algoritmi, cunoscuți sub numele de algoritmi randomizați, încorporează intrări aleatorii.
+                    </p>
+                </div>
+
+                <div id="metoda-btr" class="section scrollspy">
+                    <div class="row">
+                        <h5 class="hide-on-large-only"><b>Metoda Backtracking</b></h5>
+                        <h4 class="hide-on-med-and-down"><b>Metoda Backtracking</b></h4>
+                    </div>
+
+                    <p class="flow-text">Backtracking-ul este un algoritm general pentru găsirea tuturor sau unor
+                        soluții la unele probleme de calcul, în special la problemele de satisfacție a constrângerilor,
+                        care creează în mod incremental candidații la soluții și abandonează un candidat
+                        imediat ce determină că candidatul nu poate să fie completată cu o soluție validă.
+                    </p>
+
+                    <p class="flow-text">Backtracking-ul poate fi aplicat numai pentru problemele care admit conceptul
+                        de „soluție parțială candidată” și un test relativ rapid dacă poate fi completat la o soluție
+                        validă. Este inutil, de exemplu, pentru localizarea unei valori date într-un tabel neordonat. Cu
+                        toate acestea, atunci când este aplicabil, metoda backtracking este adesea mult mai rapidă decât
+                        enumerarea prin forțeă brută a tuturor candidaților compleți, deoarece poate elimina mulți
+                        candidați
+                        cu un singur test.
+                    </p>
+
+                    <p class="flow-text">
+                        Termenul „backtrack” a fost inventat de matematicianul american D. H. Lehmer în anii 1950.
+                    </p>
+
+                    <p class="flow-text">
+                        În continuare sunt prezentați mai mulți algoritmi care utilizează metoda backtracking pentru
+                        rezolvarea problemelor.
+                    </p>
+                </div>
+
+                <div id="permutari" class="section scrollspy">
+
+                    <div class="row">
+                        <h5 class="hide-on-large-only"><b>Generare Permutări</b></h5>
+                        <h4 class="hide-on-med-and-down"><b>Generare Permutări</b></h4>
+                    </div>
+
+
+                    <img class="row responsive-img" src="img/permutari.png" alt="solutie generare permutari">
+
+                </div>
+            </div>
+            <div class="col hide-on-small-only m3 l2">
+                <ul class="section table-of-contents pushpin">
+                    <li><a href="#introduction">Introducere</a></li>
+                    <li><a href="#metoda-btr">Metoda Backtracking</a></li>
+                    <li><a href="#permutari">Generare Permutări</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script>
+        var M = window.M;
+        this.M.AutoInit();
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.pushpin');
+            var instances = M.Pushpin.init(elems, { top: screen.height });
+        });
+
+    </script>
+</body>
+
+</html>
