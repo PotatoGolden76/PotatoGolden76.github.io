@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&display=swap');
+
+:root::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  text-align: justify;
+}
+
+/*Intro image*/
+
+
+.parallax {
+  z-index: 0;
+}
+
+/*Content*/
+.container {
+  margin-top: 40px;
+}
+
+.title {
+  text-align: center;
+  color: #AB2328;
+  font-family: 'Merriweather', serif;
+}
+
+h5, h4, h3{
+  text-decoration: underline;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+}
+
+p {
+  text-indent: 40px;
+}
+
+.responsive-img {
+  margin: 10px 0 10px 0;
+  width: 100%;
+  height: auto;
+}
