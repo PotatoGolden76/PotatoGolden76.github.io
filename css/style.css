@@ -1,0 +1,30 @@
+
+:root {
+    --main-bg-color: #FADF63;
+    --main-icon-color: #413620;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+a, p {
+    text-decoration: none;
+    color: var(--main-icon-color);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.main-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
