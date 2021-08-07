@@ -2,10 +2,16 @@
 :root {
     --main-bg-color: #FADF63;
     --main-icon-color: #413620;
+    --main-highlight-color: red;
 }
 
 body {
     background-color: var(--main-bg-color);
+}
+
+* {
+    transition: color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
 }
 
 a, p {
@@ -18,7 +24,7 @@ a, p {
 }
 
 a:hover {
-    color: red;
+    color: var(--main-highlight-color);
     text-decoration: underline;
 }
 
@@ -27,4 +33,16 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.back {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.theme-selector {
+    position: fixed;
+    top: calc(100vh - 50px);
+    left: 20px;
 }

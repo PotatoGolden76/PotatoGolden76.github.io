@@ -1,0 +1,59 @@
+:root {
+    --main-bg-color: #FADF63;
+    --main-icon-color: #413620;
+    --main-highlight-color: red;
+}
+
+* {
+    transition: color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.navbar {
+    background-color: var(--main-bg-color);
+    color: var(--main-icon-color);
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar * {
+    color: inherit;
+    font-family: inherit;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.theme-selector {
+    position: fixed;
+    top: calc(100vh - 50px);
+    left: 20px;
+
+    color: var(--main-icon-color);
+}
+
+p {
+    text-decoration: none;
+    color: var(--main-icon-color);
+    font-family: 'Times New Roman', Times, serif;
+
+    transition: color 0.3s ease-in-out;  
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-icon-color)!important;
+    font-family: 'Times New Roman', Times, serif;
+
+    transition: color 0.5s ease-in-out;
+}
+
+a:hover {
+    color: var(--main-highlight-color)!important;
+    text-decoration: underline;
+}
+
+a:active {
+    color: var(--main-highlight-color)!important;
+}
