@@ -1,12 +1,7 @@
-
-:root {
-    --main-bg-color: #FADF63;
-    --main-icon-color: #413620;
-    --main-highlight-color: red;
-}
+@import "variables.css";
 
 body {
-    background-color: var(--main-bg-color);
+    background-color: var(--main-accent-color);
 }
 
 * {

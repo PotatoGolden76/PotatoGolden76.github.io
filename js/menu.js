@@ -16,7 +16,7 @@ var races = {
     "Nadean": ""
 }
 
-window.onload = function () {
+function populate_menu() {
     var el;
     var html = '';
 
