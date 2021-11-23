@@ -1,0 +1,43 @@
+@import "variables.css";
+
+body {
+    background-color: var(--main-accent-color);
+}
+
+* {
+    transition: color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+}
+
+a, p {
+    text-decoration: none;
+    color: var(--main-icon-color);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: var(--main-highlight-color);
+    text-decoration: underline;
+}
+
+.main-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.back {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.theme-selector {
+    position: fixed;
+    top: calc(100vh - 50px);
+    left: 20px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+
+    <title>Visaria RP System</title>
+</head>
+<body>
+
+    <div class="mermaid" style="display: flex; justify-content: center;">
+        graph LR
+            A[Shadow Dagger]
+            B[Darkvision]
+            C[Shadow's Hood]
+            D[Deepen Shadows]
+            E[Veil of Darkness]
+            C --> E
+            D --> E
+            F[Shadow Hound]
+            A --> F
+            G[Dark Path]
+            A --> G
+            E --> G
+            I[Nightwing]
+            F --> I
+            J[Shadow Slip]
+            E --> J
+            G --> J
+            subgraph Novice
+                A
+                B
+                C
+                D
+            end
+
+            subgraph Journeyman
+                E
+                F
+                G
+            end
+
+            H[Shadow Form]
+            subgraph Master
+                I
+                H
+                J
+            end
+
+            classDef orange fill:#FFFFFF , stroke:#333 , stroke-width:3px;
+            class Starter orange
+            class H orange
+
+   </div>
+
+    <script>mermaid.initialize({
+        startOnLoad: true,
+        securityLevel: 'loose'
+    });</script>
+</body>
+</html>
