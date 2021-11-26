@@ -55,7 +55,7 @@
 
 .profile-image {
     z-index: 0;
-    width: 300px;
+    width: 40vh;
     height: auto;
     border-radius: 100%;
     margin-bottom: 50px;
@@ -80,7 +80,7 @@
 }
 
 .subsection-title:hover {
-    transform: translate(5px, 5px);
+    transform: scale(105%);
 }
 
 .subsection-paragraph {
@@ -92,10 +92,23 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     z-index: 5;
 
-    border: 7px solid var(--main-pale)!important;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 #about-card:hover {
     transform: scale(102%);
+}
+
+.skill-card {
+    padding: 0;
+    margin: auto;
+    box-shadow: 0 0 0;
+    border: 2px solid black!important;
+    width: 90%!important;
+    height: 180px!important;
+}
+
+.skill-card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(105%);
 }
