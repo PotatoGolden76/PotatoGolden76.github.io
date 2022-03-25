@@ -1,0 +1,150 @@
+@import "variables.css";
+
+* {
+    transition: color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+}
+
+body {
+    background-color: var(--main-background-color);
+}
+
+.container {
+    background-color: var(--main-text-area-color);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+}
+
+.navbar {
+    background-color: var(--main-accent-color);
+    color: var(--main-icon-color);
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar * {
+    color: inherit;
+    font-family: inherit;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.theme-selector {
+    position: fixed;
+    top: calc(100vh - 50px);
+    left: 20px;
+
+    color: var(--main-icon-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-icon-color)!important;
+    font-family: 'Times New Roman', Times, serif;
+
+    transition: color 0.5s ease-in-out;
+}
+
+a:hover {
+    color: var(--main-highlight-color)!important;
+    text-decoration: underline;
+}
+
+a:active {
+    color: var(--main-highlight-color)!important;
+}
+
+.dropdown-menu.show {
+    background-color: var(--main-accent-color);
+}
+
+.dropdown-item:hover {
+    background-color: var(--main-accent-color);
+}
+
+p {
+    text-decoration: none;
+    color: var(--main-icon-color);
+    font-family: 'Times New Roman', Times, serif;
+
+    transition: color 0.3s ease-in-out;  
+}
+
+.content-p {
+    text-indent: 40px;
+    font-size: 1.5rem;
+    text-align: justify;
+    color: var(--main-text-color);
+}
+
+.title {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-weight: bolder;
+    color: var(--main-text-color);
+    margin-top: 40px;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.sub-title {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-weight: bold;
+    color: var(--main-text-color);
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: var(--main-text-color);
+    margin-top: 10px;
+    text-align: left;
+}
+
+.section-title strong {
+    text-decoration: underline;
+}
+
+.content-img {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: auto;
+    width: 80%;
+}
+
+.card  {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    color: black!important;
+}
+
+th, td {
+    color: var(--main-text-color);
+}
+
+tr:hover {
+    background-color: var(--main-highlight-color);
+}
+
+tr:hover > th, tr:hover > td {
+    color: white;
+}
+
+.mermaid {
+    margin-bottom: 40px;
+}
+
+.list-group {
+    margin-bottom: 40px;
+}

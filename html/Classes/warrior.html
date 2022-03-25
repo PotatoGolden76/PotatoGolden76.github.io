@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/6c563d6d69.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../css/wiki-style.css">
+
+    <script src="../../js/theme.js"></script>
+
+    <script src="../../js/templates.js"></script>
+    <script src="../../js/navbar.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+
+    <title>Warrior</title>
+</head>
+
+<body>
+    <p onclick="cycle()" class="theme-selector"><span class="fa fa-adjust fa-lg"><span
+                style="white-space: pre-wrap;"></span></span></p>
+
+
+    <nav class="navbar navbar-expand-lg shadow-sm">
+    </nav>
+    <script>populate_menu()</script>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center text-center">
+                <h1 class="title">Warrior</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <img src="../../img/warrior.jpg" alt="warrior" class="content-img">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <p class="content-p">
+                    With a weapon in their hand and their resolve strengthened, warriors represent anything from a
+                    savage barbarian to a noble knight, these people have spent their lives training in the art of
+                    combat. With their experience and heavy weaponry, warriors bring hope to allies and dismay to
+                    enemies who are to face their steel. Being a barrier to their allies but also a spear against the
+                    enemy’s defences, warriors bring their combat prowess to any party that has them.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-left">
+                <p class="content-p section-title">
+                    <strong>Primary stats:</strong> Constitution, Fighting
+                </p>
+            </div>
+
+            <div class="col-12 d-flex justify-content-left">
+                <p class="content-p section-title">
+                    <strong>Weapon groups:</strong> Brawling, Light Blades
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center text-center">
+                <h1 class="sub-title">Archetypes</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Barbarian</h5>
+                        <p class="card-text">Strength and might, that is what makes a barbarian hit harder than a
+                            rolling boulder. Trading protections for raw power, they are a frightening sight to their
+                            enemies. They work best in short combat scenarios, where they can overwhelm their enemy with
+                            their damage.
+                        </p>
+
+                        <hr>
+
+                        <p class="card-text">
+                            <strong>Primary stats:</strong> Strength, Willpower
+                        </p>
+
+                        <hr>
+
+                        <p class="card-text">
+                            <strong>Weapon groups:</strong> Axes, Heavy Blades, one more of player's choice
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Fighter</h5>
+                        <p class="card-text">Combatants that have mastered more than one fighting style enter this
+                            category, these people make use of every weapon they can put their hands on, using their
+                            experience to quickly change their tactics in any situation. These people are also referred
+                            to as “Weapon Masters”.
+                        </p>
+
+                        <hr>
+
+                        <p class="card-text">
+                            <strong>Primary stats:</strong> Accuracy, Dexterity
+                        </p>
+
+                        <hr>
+
+                        <p class="card-text">
+                            <strong>Weapon groups:</strong> 3 of the following: Axes, Bludgeoning, Bows, Heavy Blades,
+                            Spears, Staves
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Knight</h5>
+                        <p class="card-text">It is unknown whether the Presence of a knight is a stronger weapon than
+                            they wield in combat. Able to plan on the move, inspire it’s forces and use it’s fine
+                            training to overwhelm stronger foes, a Knight works best in a coordinated team.
+                        </p>
+
+                        <hr>
+
+                        <p class="card-text">
+                            <strong>Primary stats:</strong> Accuracy, Communication
+                        </p>
+
+                        <hr>
+
+                        <p class="card-text">
+                            <strong>Weapon groups:</strong> Lances, two more of player's choice
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center text-center">
+                <h1 class="sub-title">Level-Up Features</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Level</th>
+                        <th scope="col">Talent</th>
+                        <th scope="col">Feature</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Base</td>
+                        <td><strong>Second Wind:</strong> Once per encounter, you can spend 3 SP to quickly heal
+                            yourself for 1d6+Con hp.
+                            <br><strong>Talents:</strong> Armor Training at Novice Degree (All)
+                            <hr><br><strong>Barbarian</strong>: <u>Vitality</u>(talent) and one of the following Styles:
+                            Single Weapon,
+                            Two-Handed, Unarmed,
+                            or Weapon and Shield.
+                            <br><strong>Fighter:</strong> Any 2 Combat Styles of choice.
+                            <br><strong>Knight:</strong> <u>Command</u>(talent) and one Combat Style of choice.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>--</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>+1</td>
+                        <td><strong>Heroes armor:</strong> You have an AR of 1 or your armor, whichever is better. Even
+                            if you do not wear armor, you still have this AR.
+                            <hr><br><strong>Stunt bonus:</strong> Each type can now use a Stunt to greater effect:
+                            <br><strong>&nbsp;Barbarian</strong> <u>Threatening</u>: You receive a +1 bonus on the Test
+                            you must make when you use the Threaten Stunt.
+                            <br><strong>&nbsp;Fighter:</strong> <u>Tactical Strike</u>: The Dual Strike Stunt can be
+                            used for 1 SP less for you.
+                            <br><strong>&nbsp;Knight:</strong> <u>Quick Mind</u>: Select either the Lighting Attack or
+                            Seize the Initiative Stunts. You can use the selected Stunt for 1 SP less.
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>--</td>
+                        <td><strong>Specialisation available:</strong> You gain access to your First Specialization
+                            Talent and gain its Novice Degree.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>+1</td>
+                        <td><strong>New weapon group:</strong> You learn a new weapon group of your choice.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>--</td>
+                        <td><strong>Specialisation available:</strong> You increase your first specialisation to
+                            Journeyman Degree.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>+1</td>
+                        <td>Choose 1 <u>Power</u> from the archetype list of lvl 7.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>--</td>
+                        <td><strong>Specialisation available:</strong> You increase your first specialisation to Master
+                            Degree.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>+1</td>
+                        <td><strong>New weapon group:</strong> You learn a new weapon group of your choice.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td>+1</td>
+                        <td><strong>Heroic bonus:</strong> Once per encounter, you may reroll the Stunt die on any given
+                            Test and take the better result. This means you may get more Sunt Points, or are able to
+                            reach a Threshold faster.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11</th>
+                        <td>+1</td>
+                        <td><strong>Heroic armor improvement:</strong> Like the level 3 Power but it increases to 2 AR
+                            when not in armor</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">12</th>
+                        <td>--</td>
+                        <td><strong>Specialisation available:</strong> You gain access to your Second Specialization
+                            Talent and gain its Novice Degree.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">13</th>
+                        <td>+1</td>
+                        <td>Choose 1 <u>Power</u> from the archetype list of lvl 13.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">14</th>
+                        <td>--</td>
+                        <td><strong>Specialisation available:</strong> You increase your second specialisation to
+                            Journeyman Degree.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">15</th>
+                        <td>+1</td>
+                        <td><strong>Improved second wind:</strong> Once per encounter, you can spend 3 SP to quickly
+                            heal yourself for 2d6+Con hp.<br>
+                            <strong>Quick strike:</strong> You can make a Melee Attack vs. an adjacent opponent as a
+                            minor action. The attack roll and damage of the Quick Strike suffer a –2 penalty. This
+                            action <strong>can not</strong> be combined with an <u>Expert Strike</u>.
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">16</th>
+                        <td>--</td>
+                        <td><strong>Specialisation available:</strong> You increase your second specialisation to
+                            Journeyman Degree.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">17</th>
+                        <td>+1</td>
+                        <td><strong>New weapon group:</strong> You learn a new weapon group of your choice.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">18</th>
+                        <td>--</td>
+                        <td><strong>Stunt bonus:</strong> You can sweep opponents before you. When you perform the
+                            <u>Dual
+                                Strike</u> stunt with a Melee Attack, you can hit<strong> two </strong>secondary targets
+                            instead of one. <u>All
+                                three of your targets (the original target and the two secondary targets)</u> must be
+                            adjacent
+                            to you either when you made the attack or after you’ve used the Skirmish stunt to move next
+                            to them.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">19</th>
+                        <td>+1</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">20</th>
+                        <td>+1</td>
+                        <td><strong>Epic bonus:</strong> Pick one type of stunt (combat, exploration, roleplaying, or
+                            spell). You gain a +1 bonus when generating stunt points of that type.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center text-center">
+                <h1 class="sub-title">Archetype Features</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-left">
+                <p class="content-p section-title">
+                    <strong>Barbarian</strong>
+                </p>
+            </div>
+
+            <div class="col-12 d-flex justify-content-center text-center">
+                <div class="mermaid" style="display: flex; justify-content: center;">
+                    graph TD
+                    E{{Offence is the best Defence}}
+                    A["Power Strike (Lvl. 7)"]
+                    B["Heavy Hit (Lvl. 7)"]
+                    C["Daring Charge (Lvl. 13)"]
+                    D["Chopping Block (Lvl. 13)"]
+                    A & B --> C & D
+                    classDef green fill:#add3ae, color:#fff;
+                    class E green
+                </div>
+            </div>
+
+            <div class="col-12">
+                <ul class="list-group">
+                    <li class="list-group-item"><u>Offence is the best Defence</u>: General archetype perk, passive, if
+                        you
+                        wear Light Armor or Clothing (Or
+                        nothing, I don’t judge), you get +1 to defence and speed.
+                    </li>
+
+                    <li class="list-group-item"><u>Power Strike</u>: when you use the All-Out Attack Action, you deal a
+                        +3
+                        bonus to damage instead of the base +1, but you get a -2 to def instead of the base -1.
+                    </li>
+
+                    <li class="list-group-item"><u>Heavy Hit</u>: twice per encounter, you may take a -2 on an attack
+                        roll to
+                        gain a damage bonus equal to your Constitution score.
+                    </li>
+
+                    <li class="list-group-item"><u>Daring Charge</u>: Whenever you make a Charge Action, you gain a +2
+                        bonus
+                        on the attack instead of a +1 and you add your Might Focus to the damage if you hit.
+                    </li>
+
+                    <li class="list-group-item"><u>Chopping Block</u>: Immediately after you kill a foe in combat, you
+                        can make
+                        another attack against a different foe in range as a free action. If no foe is in range, you may
+                        instead perform a free Move action to put you in range of a new target. If you kill your foe
+                        with the free attack, you do not get another free attack or move.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-left">
+                <p class="content-p section-title">
+                    <strong>Fighter</strong>
+                </p>
+            </div>
+
+            <div class="col-12 d-flex justify-content-center text-center">
+                <div class="mermaid" style="display: flex; justify-content: center;">
+                    graph TD
+                    E{{Weapons At Hand}}
+                    A["Quick Draw (Lvl. 7)"]
+                    B["Veteran (Lvl. 7)"]
+                    C["Quick Strike (Lvl. 13)"]
+                    D["Fight With Style (Lvl. 13)"]
+                    A & B --> C & D
+                    classDef green fill:#add3ae, color:#fff;
+                    class E green
+                </div>
+            </div>
+
+
+            <div class="col-12">
+                <ul class="list-group">
+                    <li class="list-group-item"><u>Weapons At Hand</u>: All penalties for using weapons from a Weapons
+                        Group you do not have is reduced to a -2 and you suffer no reduction in damage.
+                    </li>
+
+                    <li class="list-group-item"><u>Quick Draw</u>: Your training with multiple weapons has left you with
+                        some quick reflexes. Once per turn, you may switch your weapons as a free action.
+                    </li>
+
+                    <li class="list-group-item"><u>Veteran</u>: Your experience with specific types of weapons had
+                        placed you one step above the enemies. You may also add your weapon focus bonus to the damage
+                        you deal with each attack.
+                    </li>
+
+                    <li class="list-group-item"><u>Quick Strike</u>: You can make a Melee Attack vs. an adjacent
+                        opponent as a minor action. The attack roll and damage of the Quick Strike suffer a –2 penalty.
+                    </li>
+
+                    <li class="list-group-item"><u>Fight With Style</u>: When using any Style, all your attacks gain a
+                        +1 bonus in addition to what the Style may give you.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-left">
+                <p class="content-p section-title">
+                    <strong>Knight</strong>
+                </p>
+            </div>
+
+            <div class="col-12 d-flex justify-content-center text-center">
+                <div class="mermaid" style="display: flex; justify-content: center;">
+                    graph TD
+                    E{{Teamwork}}
+                    A["Precise Strike (Lvl. 7)"]
+                    B["Challenge (Lvl. 7)"]
+                    C["Expert Strike (Lvl. 13)"]
+                    D["Call To Arms (Lvl. 13)"]
+                    A & B --> C & D
+                    classDef green fill:#add3ae, color:#fff;
+                    class E green
+                </div>
+            </div>
+
+            <div class="col-12">
+                <ul class="list-group">
+                    <li class="list-group-item"><u>Teamwork</u>: When you use the Set Up Stunt on two allies instead of
+                        just one.
+                    </li>
+
+                    <li class="list-group-item"><u>Precise Strike</u>: When you use the Aim Action on a melee attack,
+                        you gain a bonus to damage as much as you do in attack.
+                    </li>
+
+                    <li class="list-group-item"><u>Challenge</u>: Select one target to Challenge as a minor action. So
+                        long as you focus on them, you gain a +1 attack and damage bonus against that target. You can
+                        only have one selected target at a time.
+                    </li>
+
+                    <li class="list-group-item"><u>Expert Strike</u>: When you make an attack, you can take up to a –3
+                        penalty on your attack roll to receive a corresponding bonus to your damage roll.You must choose
+                        before you roll.
+                    </li>
+
+                    <li class="list-group-item"><u>Call To Arms</u>: You gain access to the Call to Arms Combat stunt,
+                        (3-5 SP), when you use this stunt, you may command a willing creature to take action on your
+                        turn, for 3 stunts, they gain a minor action, from 5 stunts, they gain a major action. Their
+                        action does not generate SP.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

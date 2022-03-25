@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/6c563d6d69.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../css/wiki-style.css">
+
+    <script src="../../js/theme.js"></script>
+
+    <script src="../../js/templates.js"></script>
+    <script src="../../js/navbar.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+
+    <title>Rogue</title>
+</head>
+
+<body>
+    <p onclick="cycle()" class="theme-selector"><span class="fa fa-adjust fa-lg"><span
+                style="white-space: pre-wrap;"></span></span></p>
+
+
+    <nav class="navbar navbar-expand-lg shadow-sm">
+    </nav>
+    <script>populate_menu()</script>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center text-center">
+                <h1 class="title">Rogue</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <img src="../../img/rogue.jpg" alt="warrior" class="content-img">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <p class="content-p">
+                    Not everyone needs magic or big weapons to be dangerous, some people use their razor sharp wits and
+                    movements to make due in this hostile world. People that have this class have access to more talents
+                    than the other classes, making them a versatile unit that can fit into any mold. Be it Court
+                    intrigue, a heist or a careful raid, a rogue is always the first choice.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-left">
+                <p class="content-p section-title">
+                    <strong>Primary stats:</strong> Accuracy, Dexterity
+                </p>
+            </div>
+
+            <div class="col-12 d-flex justify-content-left">
+                <p class="content-p section-title">
+                    <strong>Weapon groups:</strong> Brawling, Light Blades and either Blackpowder or Crossbows
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center text-center">
+                <h1 class="sub-title">Archetypes</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Ranger</h5>
+                        <p class="card-text">Quick reflexes and a keen eye work hand in hand with a bow. Rogues from
+                            this background work best from a distance, making sure to hit whatever target they have in
+                            sight. Good positioning allows them to control the battlefield, while remaining safe.
+                        </p>
+
+                        <hr>
+
+                        <p class="card-text">
+                            <strong>Primary stats:</strong> Perception, Willpower
+                        </p>
+
+                        <hr>
+
+                        <p class="card-text">
+                            <strong>Weapon groups:</strong> Two from Bows, Crossbows, Slings, Pistols, Thrown, Staves
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Scout</h5>
+                        <p class="card-text">While some rogues work from the shadows, others join the fight. These
+                            rogues are best at moving quickly through the battlefield, they are always on edge and quite
+                            perceptive to their surroundings. Best used by those who want to act ahead and cut their
+                            enemies before their plans take place.
+                        </p>
+
+                        <hr>
+
+                        <p class="card-text">
+                            <strong>Primary stats:</strong> Fighting, Willpower
+                        </p>
+
+                        <hr>
+
+                        <p class="card-text">
+                            <strong>Weapon groups:</strong> Two from Chains, Flails, Spears, Staves
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Shiv</h5>
+                        <p class="card-text">Fair combat may not be something that everyone likes, especially not the
+                            Shives, staying in the shadows, striking unaware targets with a deadly blow. These people
+                            are mostly assassins or thugs, but also subtle nobles.
+                        </p>
+
+                        <hr>
+
+                        <p class="card-text">
+                            <strong>Primary stats:</strong> Communication, Perception
+                        </p>
+
+                        <hr>
+
+                        <p class="card-text">
+                            <strong>Weapon groups:</strong> Curved Blades or Chains
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center text-center">
+                <h1 class="sub-title">Level-Up Features</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Level</th>
+                        <th scope="col">Talent</th>
+                        <th scope="col">Feature</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Base</td>
+                        <td><strong>Rogue's Armor:</strong> You can wear Light Armor without the “Armor training”
+                            talent,
+                            also, while wearing Light Armor, you reduce it’s encumbrance by 1.
+                            <hr><strong>Powers:</strong>
+                            <br><strong>Ranger:</strong> <u>Deadly Aim</u>: Whenever you use
+                            the Aim Action, you deal and extra +1 in damage as well as the +1 to Attack.
+                            <br><strong>Scout:</strong> <u>One Eye Open</u>: When you are surprised you still may take a
+                            minor action during the surprise round.
+                            <br><strong>Shiv:</strong> <u>Backstab</u>: When attacking a target with a dex score lower
+                            than yours, you deal 1d6 extra damage.
+                            <hr><strong>Talents:</strong>
+                            <br><strong>Ranger:</strong> WHAT
+                            <br><strong>Scout:</strong> WHAT
+                            <br><strong>Shiv:</strong> WHAT
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>+1</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>+1</td>
+                        <td>
+                            <strong>Heroes Armor:</strong> You have an AR of 1 or your armor, whichever is better. Even
+                            if you do not wear armor, you still have this AR.
+                            <br>
+                            <strong>Stunt Bonus:</strong> All Class Options can use the Pierce Armor Stunt for 1 SP
+                            instead of 2.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>+1</td>
+                        <td>
+                            <strong>Specialisation available:</strong> You gain access to your First Specialization
+                            Talent and gain its Novice Degree.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center text-center">
+                <h1 class="sub-title">Archetype Features</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-left">
+                <p class="content-p section-title">
+                    <strong>Barbarian</strong>
+                </p>
+            </div>
+
+            <div class="col-12 d-flex justify-content-center text-center">
+                <div class="mermaid" style="display: flex; justify-content: center;">
+                    graph TD
+                    E{{Offence is the best Defence}}
+                    A["Power Strike (Lvl. 7)"]
+                    B["Heavy Hit (Lvl. 7)"]
+                    C["Daring Charge (Lvl. 13)"]
+                    D["Chopping Block (Lvl. 13)"]
+                    A & B --> C & D
+                    classDef green fill:#add3ae, color:#fff;
+                    class E green
+                </div>
+            </div>
+
+            <div class="col-12">
+                <ul class="list-group">
+                    <li class="list-group-item"><u>Offence is the best Defence</u>: General archetype perk, passive, if
+                        you
+                        wear Light Armor or Clothing (Or
+                        nothing, I don’t judge), you get +1 to defence and speed.
+                    </li>
+
+                    <li class="list-group-item"><u>Power Strike</u>: when you use the All-Out Attack Action, you deal a
+                        +3
+                        bonus to damage instead of the base +1, but you get a -2 to def instead of the base -1.
+                    </li>
+
+                    <li class="list-group-item"><u>Heavy Hit</u>: twice per encounter, you may take a -2 on an attack
+                        roll to
+                        gain a damage bonus equal to your Constitution score.
+                    </li>
+
+                    <li class="list-group-item"><u>Daring Charge</u>: Whenever you make a Charge Action, you gain a +2
+                        bonus
+                        on the attack instead of a +1 and you add your Might Focus to the damage if you hit.
+                    </li>
+
+                    <li class="list-group-item"><u>Chopping Block</u>: Immediately after you kill a foe in combat, you
+                        can make
+                        another attack against a different foe in range as a free action. If no foe is in range, you may
+                        instead perform a free Move action to put you in range of a new target. If you kill your foe
+                        with the free attack, you do not get another free attack or move.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-left">
+                <p class="content-p section-title">
+                    <strong>Fighter</strong>
+                </p>
+            </div>
+
+            <div class="col-12 d-flex justify-content-center text-center">
+                <div class="mermaid" style="display: flex; justify-content: center;">
+                    graph TD
+                    E{{Weapons At Hand}}
+                    A["Quick Draw (Lvl. 7)"]
+                    B["Veteran (Lvl. 7)"]
+                    C["Quick Strike (Lvl. 13)"]
+                    D["Fight With Style (Lvl. 13)"]
+                    A & B --> C & D
+                    classDef green fill:#add3ae, color:#fff;
+                    class E green
+                </div>
+            </div>
+
+
+            <div class="col-12">
+                <ul class="list-group">
+                    <li class="list-group-item"><u>Weapons At Hand</u>: All penalties for using weapons from a Weapons
+                        Group you do not have is reduced to a -2 and you suffer no reduction in damage.
+                    </li>
+
+                    <li class="list-group-item"><u>Quick Draw</u>: Your training with multiple weapons has left you with
+                        some quick reflexes. Once per turn, you may switch your weapons as a free action.
+                    </li>
+
+                    <li class="list-group-item"><u>Veteran</u>: Your experience with specific types of weapons had
+                        placed you one step above the enemies. You may also add your weapon focus bonus to the damage
+                        you deal with each attack.
+                    </li>
+
+                    <li class="list-group-item"><u>Quick Strike</u>: You can make a Melee Attack vs. an adjacent
+                        opponent as a minor action. The attack roll and damage of the Quick Strike suffer a –2 penalty.
+                    </li>
+
+                    <li class="list-group-item"><u>Fight With Style</u>: When using any Style, all your attacks gain a
+                        +1 bonus in addition to what the Style may give you.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-left">
+                <p class="content-p section-title">
+                    <strong>Knight</strong>
+                </p>
+            </div>
+
+            <div class="col-12 d-flex justify-content-center text-center">
+                <div class="mermaid" style="display: flex; justify-content: center;">
+                    graph TD
+                    E{{Teamwork}}
+                    A["Precise Strike (Lvl. 7)"]
+                    B["Challenge (Lvl. 7)"]
+                    C["Expert Strike (Lvl. 13)"]
+                    D["Call To Arms (Lvl. 13)"]
+                    A & B --> C & D
+                    classDef green fill:#add3ae, color:#fff;
+                    class E green
+                </div>
+            </div>
+
+            <div class="col-12">
+                <ul class="list-group">
+                    <li class="list-group-item"><u>Teamwork</u>: When you use the Set Up Stunt on two allies instead of
+                        just one.
+                    </li>
+
+                    <li class="list-group-item"><u>Precise Strike</u>: When you use the Aim Action on a melee attack,
+                        you gain a bonus to damage as much as you do in attack.
+                    </li>
+
+                    <li class="list-group-item"><u>Challenge</u>: Select one target to Challenge as a minor action. So
+                        long as you focus on them, you gain a +1 attack and damage bonus against that target. You can
+                        only have one selected target at a time.
+                    </li>
+
+                    <li class="list-group-item"><u>Expert Strike</u>: When you make an attack, you can take up to a –3
+                        penalty on your attack roll to receive a corresponding bonus to your damage roll.You must choose
+                        before you roll.
+                    </li>
+
+                    <li class="list-group-item"><u>Call To Arms</u>: You gain access to the Call to Arms Combat stunt,
+                        (3-5 SP), when you use this stunt, you may command a willing creature to take action on your
+                        turn, for 3 stunts, they gain a minor action, from 5 stunts, they gain a major action. Their
+                        action does not generate SP.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,114 +1,59 @@
-:root {
-    --main-blue: #79addc;
-    --main-pink: #FFC09F;
-    --main-yellow: #ffee93;
-    --main-pale: #FCF5C7;
-    --main-green: #ADF7B6;
+@import "variables.css";
 
-    --main-dark: #28294b;
+body {
+    background-color: var(--main-accent-color);
 }
 
-/* Firefox */
 * {
-    scrollbar-width: thin;
-    scrollbar-color: var(--main-dark) rgba(0,0,0,0.3);
-  }
-  
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 6px;
-  }
-  
-  *::-webkit-scrollbar-track {
-    background: rgba(0,0,0,0.3);
-  }
-  
-  *::-webkit-scrollbar-thumb {
-    background-color: var(--main-dark);
-    border-radius: 20px;
-    border: 3px solid rgba(0,0,0,0.3);
-  }
-
-.navbar {
-    background: rgba(0,0,0,0.4);
-    z-index: 1;
+    transition: color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
 }
 
-.nav-link:hover {
-    background-color: var(--main-blue);
-    color: white !important;
+a, p {
+    text-decoration: none;
+    color: var(--main-icon-color);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+    transition: all 0.3s ease-in-out;
 }
 
-.nav-item {
-    flex-basis: 100%;
-    text-align: center;
-}
-
-.billboard {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://source.unsplash.com/phIFdC6lA4E/1920x1080);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.profile-image {
-    z-index: 0;
-    width: 40vh;
-    height: auto;
-    border-radius: 100%;
-    margin-bottom: 50px;
-
-    border: 10px solid var(--main-dark);
-}
-
-.profile-text {
-    color: var(--main-pale)
-}
-
-.subsection {
-    margin-top: 10vh;
-    min-height: 50vh;
-}
-
-.subsection-title {
+a:hover {
+    color: var(--main-highlight-color);
     text-decoration: underline;
-    text-decoration-color: var(--main-green);
-
-    transition: all 1s ease-in-out;
 }
 
-.subsection-title:hover {
-    transform: scale(105%);
+.main-content {
+    height: 100vh;
+
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.subsection-paragraph {
-    text-align: justify;
-    text-indent: 40px;
+.back {
+    position: fixed;
+    top: 20px;
+    left: 20px;
 }
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: 5;
-
-    transition: all 0.5s ease-in-out;
+.theme-selector {
+    position: fixed;
+    top: calc(100vh - 50px);
+    left: 20px;
 }
 
-#about-card:hover {
-    transform: scale(102%);
+.row {
+    width: 100%!important;
 }
 
-.skill-card {
-    padding: 0;
-    margin: auto;
-    box-shadow: 0 0 0;
-    border: 2px solid black!important;
-    width: 90%!important;
-    height: 180px!important;
-}
-
-.skill-card:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transform: scale(105%);
+.icons > * {
+    /*d-flex flex-column justify-content-center align-items-center*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
