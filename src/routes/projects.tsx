@@ -3,7 +3,7 @@ import styles from '../styles/projects.module.scss'
 
 import dataJSON from '../projects.json'
 import classNames from 'classnames';
-import PowerCard from '../components/powerCard';
+import ProjectCard from '../components/projectCard';
 
 interface Project {
   name: string,
@@ -19,10 +19,8 @@ export default function Projects(props: any) {
     <>
         <Header />
         
-        <h1 className={styles.title}>My Projects</h1>
-
         <div className={classNames("container mx-auto flex flex-row gap-8 justify-center flex-wrap ")}>
-          {data.map((e: Project) => { return <PowerCard text={e.name} color={e.color} destination={e.link} key={e.name} icon={e.icon ? require("@fortawesome/free-solid-svg-icons")[e.icon] : null} width="350px" height="250px"/>})}
+          {data.map((e: Project) => { return <ProjectCard/>})}
         </div>
     </>
   );

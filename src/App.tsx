@@ -6,8 +6,7 @@ import {
   faUserSecret,
   faEnvelope,
   faStar,
-  faFolderTree
-} from '@fortawesome/free-solid-svg-icons'
+  faFolderTree } from '@fortawesome/free-solid-svg-icons'
 import { TypeAnimation } from 'react-type-animation';
 
 export default function App() {
@@ -20,7 +19,7 @@ export default function App() {
         wrapper="h1"
         cursor={true}
         repeat={0}
-        style={{ fontSize: '4rem' }}
+        style={{ fontSize: '3rem' }}
       />
       <PowerCard text="About" destination="/about" color="red" icon={faUserSecret} />
       <PowerCard text="Projects" destination="/projects" color="orange" icon={faFolderTree} />
