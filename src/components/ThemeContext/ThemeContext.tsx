@@ -11,7 +11,7 @@ interface ThemeContextProps {
 }
 
 function getCookieOrSystem() {
-    let darkMode = false
+    let darkMode
     const isDarkCookie = Cookies.get('isDarkMode');
     if(isDarkCookie) {
         darkMode = (isDarkCookie === "true")
