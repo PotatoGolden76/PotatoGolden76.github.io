@@ -2,15 +2,11 @@ import {useContext} from "react";
 import {ThemeContext} from "../../components/ThemeContext/ThemeContext.tsx";
 import styles from "./Homepage.module.css"
 import classNames from "classnames";
+import ThemeSwitcher from "../../components/ThemeSwitcher/ThemeSwitcher.tsx";
 
 function Homepage() {
-    const {isDarkMode, toggleDarkMode} = useContext(ThemeContext)
-    /*
-    * cv
-    * projects
-    * contact
-    *
-    * */
+    const {isDarkMode} = useContext(ThemeContext)
+
     return (
         <div className={classNames(styles.content, {"dark": isDarkMode})}>
             <h1 className={styles.title}>
@@ -23,7 +19,7 @@ function Homepage() {
                 <a className={styles.link} href="#/contact">Contact</a>
             </div>
 
-            <button className={styles["theme-button"]} onClick={toggleDarkMode}>switcharoo</button>
+            <ThemeSwitcher/>
         </div>
     )
 }
