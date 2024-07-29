@@ -1,0 +1,30 @@
+@import './styles/reset.css';
+
+:root {
+    --background-color: #FAFAFA;
+    --text-color: #050315;
+    --focus-color: var(--accent-red);
+
+    --accent-red: #FFADAD;
+    --accent-orange: #FFD6A5;
+    --accent-yellow: #FDFFB6;
+    --accent-green: #CAFFBF;
+    --accent-blue: #9BF6FF;
+    --accent-darkblue: #A0C4FF;
+    --accent-purple: #BDB2FF;
+}
+
+* {
+    transition-property: background-color, color;
+    transition-duration: 0.25s;
+    /*transition-timing-function: ease-in-out;*/
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+*:focus-visible {
+    outline: dashed var(--focus-color);
+}
+
