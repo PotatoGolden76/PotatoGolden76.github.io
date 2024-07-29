@@ -27,11 +27,10 @@ function getCookieOrSystem() {
 
     return darkMode
 }
-// --background-color: #FAFAFA;
-// --text-color: #050315;
-// --focus-color: var(--accent-red);
+
 function updateStyles(isDarkMode: boolean) {
     document.documentElement.style.setProperty('--background-color', isDarkMode ? '#1B1A1F' : '#FAFAFA');
+    document.documentElement.style.setProperty('--cutout-color', isDarkMode ? '#343b43' : '#050315');
     document.documentElement.style.setProperty('--text-color', isDarkMode ? '#ffffff' : '#050315');
 }
 

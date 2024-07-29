@@ -2,6 +2,7 @@
 
 :root {
     --background-color: #FAFAFA;
+    --cutout-color: #343b43;
     --text-color: #050315;
     --focus-color: var(--accent-red);
 
