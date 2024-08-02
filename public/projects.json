@@ -1,0 +1,53 @@
+[
+  {
+    "name": "CineCam",
+    "short_desc": "Cinematic camera control for Godot games",
+    "long_desc": "CineCam is a plugin that provides a simple but powerful method to deal with multi-camera systems and animating camera transitions. It aims to allow the user to replicate real life cinematographic movement in 3D scenes, offering advanced camera control and a transition systems integrated seamlessly with the Godot Editor.",
+    "website": "https://godotengine.org/asset-library/asset/3044",
+    "repository": "https://github.com/PotatoGolden76/cinecam",
+    "status": "Finished",
+    "tech": [
+      "Godot",
+      "GDScript"
+    ]
+  },
+  {
+    "name": "Gists Browser",
+    "short_desc": "A tool for browsing the public Github Gists of a user",
+    "long_desc": "Browse the public gists of any Github users with this SPA built using React.js, Typescript and Sass.",
+    "website": "https://potatogolden76.github.io/gists-browser/",
+    "repository": "https://github.com/PotatoGolden76/gists-browser",
+    "status": "Planning to rewrite",
+    "tech": [
+      "React",
+      "TypeScript",
+      "SASS",
+      "GitHub API"
+    ]
+  },
+  {
+    "name": "Movie Backend",
+    "short_desc": "A demo Django movie API for a university assignment",
+    "long_desc": "Demo backend written in Django, using django-rest-framework. This API was written as a university assignment, hosted on Google Cloud, and connected to a PostgreSQL server hosted on the same platform. The backend has been stress tested with ~10 million database entries and works flawlessly, including proper request pagination.",
+    "website": "Finished",
+    "repository": "https://github.com/PotatoGolden76/movie-backend",
+    "status": "Finished",
+    "tech": [
+      "Django",
+      "Django Rest Framework",
+      "PostgreSQL",
+      "Google Cloud"
+    ]
+  },
+  {
+    "name": "Pythonic Obstruction",
+    "short_desc": "A console-based implementation of the game Obstruction",
+    "long_desc": "A console-based implementation of the game Obstruction, written for both player versus player and player versus computer play, as part of a University assignment.",
+    "website": "",
+    "repository": "https://github.com/PotatoGolden76/pythonic-obstruction",
+    "status": "Finished",
+    "tech": [
+      "Python"
+    ]
+  }
+]

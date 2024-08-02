@@ -1,5 +1,6 @@
 import styles from "./Homepage.module.css"
 import ThemeSwitcher from "../../components/ThemeSwitcher/ThemeSwitcher.tsx";
+import {Link} from "react-router-dom";
 
 function Homepage() {
 
@@ -10,9 +11,9 @@ function Homepage() {
             </h1>
 
             <div className={styles["link-wrapper"]}>
-                <a className={styles.link} href="#/projects">Projects</a>
+                <Link className={styles.link} to="/projects">Projects</Link>
                 <a className={styles.link} href="/Robert_Harangus_Resume.pdf">Resume</a>
-                <a className={styles.link} href="#/contact">Contact</a>
+                <Link className={styles.link} to="/contact">Contact</Link>
             </div>
 
             <ThemeSwitcher/>

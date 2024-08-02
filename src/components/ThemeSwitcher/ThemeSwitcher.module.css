@@ -7,3 +7,8 @@
     background: transparent;
     color: var(--text-color);
 }
+
+.theme-button.right {
+    left: auto;
+    right: 20px;
+}

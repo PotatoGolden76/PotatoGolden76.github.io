@@ -1,13 +1,11 @@
 import {useContext} from "react";
-import {ThemeContext} from "../../components/ThemeContext/ThemeContext.tsx";
+import {ThemeContext} from "../../contexts/ThemeContext/ThemeContext.tsx";
 import styles from "./Contact.module.css"
 import classNames from "classnames";
 import {GitHub, Linkedin} from "react-feather";
 import {Link} from "react-router-dom";
 import BackButton from "../../components/BackButton/BackButton.tsx";
-
-// TODO: Implement theme switcher on secondary routes
-// import ThemeSwitcher from "../../components/ThemeSwitcher/ThemeSwitcher.tsx";
+import ThemeSwitcher from "../../components/ThemeSwitcher/ThemeSwitcher.tsx";
 
 function Contact() {
     const {isDarkMode} = useContext(ThemeContext)
@@ -17,7 +15,7 @@ function Contact() {
             <BackButton/>
             <div className={classNames(styles.content, {"dark": isDarkMode})}>
                 <h1 className={styles.title}>
-                    {`Get in touch!`}
+                    Get in touch!
                 </h1>
                 <div className={styles["socials-wrapper"]}>
                     <Link to="https://github.com/PotatoGolden76/" target="_blank">
@@ -32,6 +30,7 @@ function Contact() {
                     <li><b>Phone:</b><a href="tel:+40787752332"> +(40) 787 752 332</a></li>
                 </ul>
             </div>
+            <ThemeSwitcher isOnTheRight/>
         </>
     )
 }

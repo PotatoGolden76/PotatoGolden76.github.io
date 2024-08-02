@@ -1,0 +1,40 @@
+.content {
+    margin: 10dvh 25dvw;
+    padding: 2rem 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 25px;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    color: var(--text-color);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1024px) {
+    .content {
+        margin: 10dvh 15dvw;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .content {
+        margin: 10dvh 2dvw;
+        gap: 15px;
+    }
+
+    .title {
+        margin-bottom: 1rem;
+    }
+}
