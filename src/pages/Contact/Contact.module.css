@@ -43,7 +43,8 @@
     margin: 2rem 0;
 }
 
-.socials-wrapper *:visited {
+.socials-wrapper *:visited,
+.socials-wrapper * {
     color: var(--text-color);
 }
 
