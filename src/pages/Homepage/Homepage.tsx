@@ -1,14 +1,10 @@
-import {useContext} from "react";
-import {ThemeContext} from "../../components/ThemeContext/ThemeContext.tsx";
 import styles from "./Homepage.module.css"
-import classNames from "classnames";
 import ThemeSwitcher from "../../components/ThemeSwitcher/ThemeSwitcher.tsx";
 
 function Homepage() {
-    const {isDarkMode} = useContext(ThemeContext)
 
     return (
-        <div className={classNames(styles.content, {"dark": isDarkMode})}>
+        <div className={styles.content}>
             <h1 className={styles.title}>
                 {`<Hi, I'm Robert />`}
             </h1>
