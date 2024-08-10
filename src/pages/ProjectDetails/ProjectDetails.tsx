@@ -33,7 +33,7 @@ function ProjectDetails() {
                 <div className={styles["button-wrapper"]}>
                     {project?.website ? <Link className={styles.button} to={project?.website}>Website</Link> : null}
                     {project?.repository ?
-                        <Link className={styles.button} to={project?.repository}>Repository</Link> : null}
+                        <Link className={styles.button} to={project?.repository} target="_blank">Repository</Link> : null}
                 </div>
 
                 {project?.long_desc ? <p className={styles.description}>{project?.long_desc}</p> : null}
