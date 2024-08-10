@@ -31,7 +31,7 @@ function ProjectDetails() {
                 </ul>
 
                 <div className={styles["button-wrapper"]}>
-                    {project?.website ? <Link className={styles.button} to={project?.website}>Website</Link> : null}
+                    {project?.website ? <Link className={styles.button} to={project?.website} target="_blank">Website</Link> : null}
                     {project?.repository ?
                         <Link className={styles.button} to={project?.repository} target="_blank">Repository</Link> : null}
                 </div>
