@@ -27,14 +27,11 @@
 @media only screen and (max-width: 760px) {
     .title {
         font-size: 2rem;
+        margin-bottom: 1rem;
     }
 
     .content {
         margin: 10dvh 2dvw;
         gap: 15px;
-    }
-
-    .title {
-        margin-bottom: 1rem;
     }
 }
